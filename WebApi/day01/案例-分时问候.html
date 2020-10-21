@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>分时问候</title>
+  <style>
+    img {
+      width: 300px;
+    }
+  </style>
+</head>
+
+<body>
+  <img src="images/s.gif" alt="">
+  <p>上午好</p>
+  <script>
+    var oImg = document.querySelector('img')
+    var oP = document.querySelector('p')
+    var date = new Date()
+    var h = date.getHours()
+    if (h < 12) {
+      oImg.src = 'images/s.gif'
+      oP.innerHTML = '上午好'
+    } else if (h < 18) {
+      oImg.src = 'images/x.gif'
+      oP.innerHTML = '下午好'
+    } else {
+      oImg.src = 'images/w.gif'
+      oP.innerHTML = '晚上好'
+
+    }
+
+  </script>
+</body>
+
+</html>

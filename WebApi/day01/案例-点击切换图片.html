@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>点击切换图片</title>
+  <style>
+    img {
+      width: 300px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <button>张学友</button>
+    <button>刘德华</button>
+  </div>
+  <img src="images/zxy.jpg" title="张学友" alt="">
+  <script>
+    // 获取第一个 button 按钮元素对象
+    var oBtn1 = document.querySelector('button:nth-child(1)')
+    // 获取第二个 button 按钮元素对象
+    var oBtn2 = document.querySelector('button:nth-child(2)')
+    // 获取图片元素对象
+    var oImg = document.querySelector('img')
+
+    // 点击后图片换成张学友
+    oBtn1.onclick = function () {
+      oImg.src = 'images/zxy.jpg'
+      oImg.title = '张学友'
+    }
+    // 点击后图片换成刘德华
+    oBtn2.onclick = function () {
+      oImg.src = 'images/ldh.jpg'
+      oImg.title = '刘德华'
+    }
+  </script>
+</body>
+
+</html>

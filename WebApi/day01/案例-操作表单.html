@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>操作表单</title>
+</head>
+
+<body>
+  <input type="text" value="请输入点啥">
+  <button>按钮</button>
+  <script>
+    var oIpt = document.querySelector('input')
+    var oBtn = document.querySelector('button')
+    oBtn.onclick = function () {
+      oIpt.value = '没啥可输入的'
+      oBtn.disabled = true
+    }
+  </script>
+</body>
+
+</html>
