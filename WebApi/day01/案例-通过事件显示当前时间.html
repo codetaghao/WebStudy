@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>案例-通过事件获取当前时间</title>
+  <style>
+    div {
+      height: 30px;
+    }
+  </style>
+</head>
+
+<body>
+  <div>今天的日期是 <span></span></div>
+  <button>点击查看日期</button>
+
+  <script>
+    var oBtn = document.querySelector('button')
+    var OBd = document.querySelector('span')
+
+    oBtn.onclick = function () {
+      OBd.innerText = getDate()
+    }
+    function getDate() {
+      const date = new Date()
+      const y = date.getFullYear()
+      const m = (date.getMonth() + 1).toString().padStart(2, 0)
+      const d = date.getDate().toString().padStart(2, 0)
+      const hh = date.getHours().toString().padStart(2, 0)
+      const mm = date.getMinutes().toString().padStart(2, 0)
+      const ss = date.getSeconds().toString().padStart(2, 0)
+      return `${y}-${m}-${d} ${hh}:${mm}:${ss}`
+    }
+
+  </script>
+</body>
+
+</html>

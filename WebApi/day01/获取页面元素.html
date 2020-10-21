@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>获取页面元素</title>
+</head>
+
+<body>
+  <ul class="my">
+    <li class="active"></li>
+    <li id="web"></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+  <script>
+    // 通过 id 获取元素必须是 document.getElementById()
+    // var firstLi = document.getElementById('web')
+    // console.log(firstLi)
+
+    // var test = document.getElementById('asda')
+    // console.log(test)
+
+    // 通过标签获取元素 结果是伪数组
+    var myul = document.getElementsByTagName('ul')
+    var lis = myul[0].getElementsByTagName('li')
+    console.log(lis)
+
+    // console.log(activeLi)
+    // 获取特殊元素 html body
+    var body = document.body
+    console.log(body.children)
+    console.log(body.getElementsByTagName('ul'))
+    // console.dir(body)
+    // var html = document.documentElement
+    // console.log(html)
+    // console.dir(html)
+    // document.forms 包含文档中所有<form>元素（与 document.getElementsByTagName ("form") 返回的结果相同）。
+
+    // document.images 包含文档中所有<img>元素（与 document.getElementsByTagName ("img")返回的结果相同）。
+
+    // document.links 包含文档中所有带 href 属性的<a>元素
+
+
+
+    // h5新增写法 只兼容 ie9 以上的浏览器
+    // 通过 class 获取元素  结果是伪数组
+    // var activeLi = document.getElementsByClassName('active')
+
+    // // docment.querySelector(选择器名称) 选择符合条件的第一个元素
+    // var myli = document.querySelector('li')
+    // console.log(myli)
+
+    // // docment.querySelectorAll(选择器名称) 选择符合条件的所有元素 结果是伪数组
+    // var mylis = document.querySelectorAll('li')
+    // console.log(mylis)
+
+
+  </script>
+</body>
+
+</html>
