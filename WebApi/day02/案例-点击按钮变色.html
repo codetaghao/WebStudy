@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>点击按钮变色</title>
+</head>
+
+<body>
+  <button>按钮1</button>
+  <button>按钮2</button>
+  <button>按钮3</button>
+  <button>按钮4</button>
+  <button>按钮5</button>
+  <script>
+    // var btns = document.querySelectorAll('button')
+    // for (var i = 0; i < btns.length; i++) {
+    //   // 循环遍历给每个按钮添加点击事件
+    //   btns[i].onclick = function () {
+    //     // 清除每个按钮的样式
+    //     for (var j = 0; j < btns.length; j++) {
+    //       btns[j].style.backgroundColor = ''
+    //     }
+    //     this.style.backgroundColor = 'pink'
+    //   }
+    // }
+    var btns = document.querySelectorAll('button')
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].onclick = function () {
+        // 清除每个按钮的样式
+        for (var j = 0; j < btns.length; j++) {
+          btn[j].style.backgroundColor = ''
+        }
+        // 给被点击的按钮添加样式
+        this.style.backgroundColor = 'pink'
+      }
+    }
+
+  </script>
+</body>
+
+</html>

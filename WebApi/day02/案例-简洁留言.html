@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      padding: 100px;
+    }
+
+    textarea {
+      width: 200px;
+      height: 100px;
+      border: 1px solid pink;
+      outline: none;
+      resize: none;
+    }
+
+    ul {
+      margin-top: 50px;
+    }
+
+    li {
+      width: 300px;
+      padding: 5px;
+      background-color: rgb(245, 209, 243);
+      color: red;
+      font-size: 14px;
+      margin: 15px 0;
+    }
+  </style>
+</head>
+
+<body>
+  <textarea name="" id=""></textarea>
+  <button>发布</button>
+  <ul>
+
+  </ul>
+  <script>
+    // var oTexts = document.querySelector('textarea')
+    // var oBtn = document.querySelector('button')
+    // var oUl = document.querySelector('ul')
+    // oBtn.onclick = function () {
+    //   if (!oTexts.value.trim()) {
+    //     alert('请输入内容')
+    //     return
+    //   }
+    //   var li = document.createElement('li')
+    //   li.innerHTML = oTexts.value
+
+    //   oUl.insertBefore(li, oUl.children[0])
+    //   oTexts.value = ''
+    // }
+
+    let oTexts = document.querySelector('textarea')
+    let oBtn = document.querySelector('button')
+    let oUl = document.querySelector('ul')
+    oBtn.onclick = function () {
+      if (!oText.value.trim()) {
+        alert('请输入内容')
+        return
+      }
+      let li = document.createElement('li')
+      li.innerText = ''
+    }
+  </script>
+</body>
+
+</html>
